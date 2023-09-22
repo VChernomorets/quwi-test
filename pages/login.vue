@@ -2,8 +2,8 @@
   <div class="login">
     <logo class="login__logo"/>
     <form class="login__form" @submit.prevent="login()">
-      <BaseInput placeholder="Email" type="email" v-model="email" :error-text="errorText" />
-      <BaseInput placeholder="Password" type="password" v-model="password"/>
+      <BaseInput placeholder="Email" type="email" v-model="email" :error-text="errorText" @input="errorText = ''"/>
+      <BaseInput placeholder="Password" type="password" v-model="password" @input="errorText = ''"/>
       <button class="login__form__send">Login</button>
     </form>
     <a href="#" class="login__forgot_password">
