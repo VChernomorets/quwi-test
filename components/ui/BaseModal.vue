@@ -35,7 +35,6 @@ export default {
   box-shadow: 0 0 12px rgba(0,0,0,.25);
   border-radius: 15px;
   display: flex;
-  min-width: 500px;
-  width: 500px;
+  width: max-content;
 }
 </style>
